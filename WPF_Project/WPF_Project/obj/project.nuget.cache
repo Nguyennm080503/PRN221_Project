@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rpNXsU4MD2Fk10YMxEuRexwhcicZzi+P0qILRJZNUuwGyjNqy5L3O/L668cLNs/Wftr/15eaNAEqeOAtIjpsNw==",
+  "dgSpecHash": "llL0qiATSIjp3FoGoOUFbko5Lws/Z1uc+qbiG3jxxTUzEBMQyNifoqTOB9CX8qZAnrMRFtoYYb2LLRZY0Lp7rA==",
   "success": true,
-  "projectFilePath": "D:\\BT\\Môn\\Kì 7\\PRN221\\Lab\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
+  "projectFilePath": "D:\\BT\\Môn\\Kì 7\\PRN221\\PRN221_VoiceConverter\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

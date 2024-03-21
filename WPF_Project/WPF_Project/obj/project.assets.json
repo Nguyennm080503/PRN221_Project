@@ -492,11 +492,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BT\\Môn\\Kì 7\\PRN221\\Lab\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
+      "projectUniqueName": "D:\\BT\\Môn\\Kì 7\\PRN221\\PRN221_VoiceConverter\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
       "projectName": "WPF_Project",
-      "projectPath": "D:\\BT\\Môn\\Kì 7\\PRN221\\Lab\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
+      "projectPath": "D:\\BT\\Môn\\Kì 7\\PRN221\\PRN221_VoiceConverter\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
       "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\BT\\Môn\\Kì 7\\PRN221\\Lab\\WPF_Project\\WPF_Project\\obj\\",
+      "outputPath": "D:\\BT\\Môn\\Kì 7\\PRN221\\PRN221_VoiceConverter\\PRN221_Project\\WPF_Project\\WPF_Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
