@@ -108,5 +108,11 @@ namespace WPF_Project
             if (open.ShowDialog() != System.Windows.Forms.DialogResult.OK) return;
             tb_url.Text = open.FileName;
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ControlVoice controlVoiceWindow = new ControlVoice(); 
+            controlVoiceWindow.Show(); 
+        }
     }
 }
