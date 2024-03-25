@@ -78,14 +78,14 @@ namespace WPF_Project
             {
                 using (ExcelPackage package = new ExcelPackage(new FileInfo(path)))
                 {
-                    ExcelWorksheet worksheet = package.Workbook.Worksheets[0]; // Lấy trang tính đầu tiên
-                    int rowCount = worksheet.Dimension.Rows; // Số hàng trong trang tính
-                    int colCount = worksheet.Dimension.Columns; // Số cột trong trang tính
+                    ExcelWorksheet worksheet = package.Workbook.Worksheets[0]; 
+                    int rowCount = worksheet.Dimension.Rows; 
+                    int colCount = worksheet.Dimension.Columns; 
 
-                    // Bắt đầu từ hàng thứ hai (hàng đầu tiên thường là tiêu đề)
+                    
                     for (int row = 2; row <= rowCount; row++)
                     {
-                        // Đọc dữ liệu từ các ô trong mỗi hàng và thêm vào danh sách Products
+                        
                         Products.Add(new Product
                         {
                             ProductId = int.Parse(worksheet.Cells[row, 1].Value.ToString()),
@@ -102,65 +102,7 @@ namespace WPF_Project
                 System.Windows.MessageBox.Show(ex.Message, "Error");
             }
         }
-        private async void Load_FileExcel()
-        {
-            string path = @"D:\PRN_ASS\PRN211_ASS\ProductList.xlsx";
-            Stopwatch stopwatch = new Stopwatch();
-            using (var reader = new StreamReader(path))
-            {
-                using (var csv = new CsvReader(reader, new CsvConfiguration(CultureInfo.CurrentCulture)))
-                {
-                    stopwatch.Start();
-                    // Read and skip the header
-                    await csv.ReadAsync();
-                    csv.ReadHeader();
-
-                    // Set up DataTable for batch processing
-                    var dataTable = new DataTable();
-                    dataTable.Columns.Add("ProductID", typeof(int));
-                    dataTable.Columns.Add("ProductName", typeof(string));
-                    dataTable.Columns.Add("Price", typeof(decimal));
-                    dataTable.Columns.Add("Quantity", typeof(decimal));
-                    dataTable.Columns.Add("Status", typeof(string));
-                    int hasData = 0;
-                    while (await csv.ReadAsync())
-                    {
-                        var fieldData = csv.Context.Record;
-                        
-                            hasData = 1;
-                            var dataRow = dataTable.NewRow();
-                            dataRow["ProductID"] = csv.Context.Row - 2;
-                            dataRow["ProductName"] = string.IsNullOrEmpty(fieldData[0]);
-                            dataRow["Price"] = string.IsNullOrEmpty(fieldData[1]) ? DBNull.Value : ConvertStringIntoDecimal(fieldData[2]);
-                        dataRow["Quantity"] = string.IsNullOrEmpty(fieldData[2]) ? DBNull.Value : ConvertStringIntoDecimal(fieldData[2]);
-                        dataRow["Status"] = string.IsNullOrEmpty(fieldData[3]);
-                           
-                            //dataRow["MaTinh"] = int.Parse(fieldData[11]);
-                            dataTable.Rows.Add(dataRow);
-                        ProductDataGrid.ItemsSource = (System.Collections.IEnumerable)dataTable;
-                            if (dataTable.Rows.Count % 500 == 0)
-                            {
-                                dataTable.Rows.Clear();
-                            }
-                        
-                        if (hasData == 1)
-                        {
-                            System.Windows.MessageBox.Show($"Da cuoi dong roi");
-                            break;
-                        }
-                    }
-                    
-                    stopwatch.Stop();
-                }
-            }
-            TimeSpan elapsedTime = stopwatch.Elapsed;
-            System.Windows.MessageBox.Show($"Thời gian thực hiện: {elapsedTime.TotalSeconds} s");
-        }
-        private decimal? ConvertStringIntoDecimal(string input)
-        {
-            if (string.IsNullOrEmpty(input))
-                return null;
-            return decimal.Parse(input);
-        }
+       
+        
     }
 }
