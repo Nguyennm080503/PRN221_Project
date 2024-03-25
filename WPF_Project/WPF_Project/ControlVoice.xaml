@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPF_Project"
         mc:Ignorable="d"
         Title="ControlVoice" Height="450" Width="800">
-    <Grid>
+    <Grid Loaded="Grid_Loaded">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
 
@@ -18,8 +18,8 @@
 
         <DataGrid x:Name="ProductDataGrid" Grid.Row="1" ItemsSource="{Binding Products}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Margin="23,175,154,32">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Product ID" Binding="{Binding ProductId}" Width="100"/>
-                <DataGridTextColumn Header="Product Name" Binding="{Binding ProductName}" Width="200"/>
+                <DataGridTextColumn Header="ProductID" Binding="{Binding ProductId}" Width="100"/>
+                <DataGridTextColumn Header="ProductName" Binding="{Binding ProductName}" Width="200"/>
                 <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="100"/>
                 <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="100"/>
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100"/>
