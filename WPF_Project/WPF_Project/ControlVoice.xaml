@@ -14,14 +14,15 @@
 
         </Grid.RowDefinitions>
 
-        <Button Content="Export" Click="ExportButton_Click" Margin="664,217,60,145" Grid.Row="1"/>
+        <Button Content="Export" Click="ExportButton_Click" Margin="683,217,41,145" Grid.Row="1"/>
 
-        <DataGrid x:Name="ProductDataGrid" Grid.Row="1" ItemsSource="{Binding Products}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Margin="23,175,179,32">
+        <DataGrid x:Name="ProductDataGrid" Grid.Row="1" ItemsSource="{Binding Products}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Margin="23,175,154,32">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Product ID" Binding="{Binding ProductId}" Width="100"/>
                 <DataGridTextColumn Header="Product Name" Binding="{Binding ProductName}" Width="200"/>
                 <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="100"/>
                 <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="100"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
