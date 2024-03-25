@@ -27,10 +27,10 @@ namespace WPF_Project
             InitializeComponent();
             this.DataContext = this;
 
-            Products.Add(new Product() { ProductId = 1, ProductName = "Apple", Price = 10.5m, Quantity = 100, Status = "Available" });
-            Products.Add(new Product() { ProductId = 2, ProductName = "Banana", Price = 20.75m, Quantity = 50, Status = "Available" });
-            Products.Add(new Product() { ProductId = 3, ProductName = "Coconut", Price = 15.0m, Quantity = 75, Status = "Available" });
-            Products.Add(new Product() { ProductId = 4, ProductName = "Orange", Price = 12.0m, Quantity = 60, Status = "Out of Stock" });
+            Products.Add(new Product() { ProductName = "Apple", Price = 10000, Quantity = 100, Status = "Available" });
+            Products.Add(new Product() { ProductName = "Banana", Price = 12000, Quantity = 50, Status = "Available" });
+            Products.Add(new Product() { ProductName = "Coconut", Price = 20000, Quantity = 75, Status = "Available" });
+            Products.Add(new Product() { ProductName = "Orange", Price = 30000, Quantity = 60, Status = "Out of Stock" });
 
         }
         #region OnpropertyChanged
@@ -43,11 +43,18 @@ namespace WPF_Project
 
         public class Product
         {
-            public int ProductId { get; set; }
+            private static int nextProductId = 1; // biến static để theo dõi ProductId kế tiếp
+
+            public int ProductId { get; private set; }
             public string ProductName { get; set; }
             public decimal Price { get; set; }
             public int Quantity { get; set; }
             public string Status { get; set; }
+
+            public Product()
+            {
+                ProductId = nextProductId++; // Tự động tăng và gán ProductId cho mỗi sản phẩm
+            }
         }
 
         private void ExportButton_Click(object sender, RoutedEventArgs e)
