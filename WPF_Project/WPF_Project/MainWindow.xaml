@@ -16,6 +16,7 @@
         <Label Content="Link" HorizontalAlignment="Left" Margin="143,120,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="tb_url" HorizontalAlignment="Left" Margin="199,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="284"/>
         <Button x:Name="btn_browser" Content="Browser" HorizontalAlignment="Left" Margin="534,123,0,0" VerticalAlignment="Top" Click="btn_browser_Click"/>
+        <Button Content="Export to Sheet&#xD;&#xA;" HorizontalAlignment="Left" Margin="557,300,0,0" VerticalAlignment="Top" Click="Button_Click_1" Height="21" Width="95"/>
 
     </Grid>
 </Window>
