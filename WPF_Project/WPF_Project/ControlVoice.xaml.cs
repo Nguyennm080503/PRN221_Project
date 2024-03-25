@@ -27,9 +27,10 @@ namespace WPF_Project
             InitializeComponent();
             this.DataContext = this;
 
-            Products.Add(new Product() { ProductId = 1, ProductName = "Apple", Price = 10.5m, Quantity = 100 });
-            Products.Add(new Product() { ProductId = 2, ProductName = "Banana", Price = 20.75m, Quantity = 50 });
-            Products.Add(new Product() { ProductId = 3, ProductName = "Coconut", Price = 15.0m, Quantity = 75 });
+            Products.Add(new Product() { ProductId = 1, ProductName = "Apple", Price = 10.5m, Quantity = 100, Status = "Available" });
+            Products.Add(new Product() { ProductId = 2, ProductName = "Banana", Price = 20.75m, Quantity = 50, Status = "Available" });
+            Products.Add(new Product() { ProductId = 3, ProductName = "Coconut", Price = 15.0m, Quantity = 75, Status = "Available" });
+            Products.Add(new Product() { ProductId = 4, ProductName = "Orange", Price = 12.0m, Quantity = 60, Status = "Out of Stock" });
 
         }
         #region OnpropertyChanged
@@ -46,11 +47,13 @@ namespace WPF_Project
             public string ProductName { get; set; }
             public decimal Price { get; set; }
             public int Quantity { get; set; }
+            public string Status { get; set; }
         }
 
         private void ExportButton_Click(object sender, RoutedEventArgs e)
         {
-            ExportExcelSheet export = new ExportExcelSheet(ProductDataGrid, DateTime.Now);
+            string filePath = @"D:\PRN221_Slide\ProductList.xlsx";
+            ExportExcelSheet export = new ExportExcelSheet(ProductDataGrid, DateTime.Now, filePath);
         }
 
     }
