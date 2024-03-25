@@ -14,7 +14,7 @@
 
         </Grid.RowDefinitions>
 
-        <Button Content="Export" Click="ExportButton_Click" Margin="664,217,60,194" Grid.Row="1"/>
+        <Button Content="Export" Click="ExportButton_Click" Margin="664,217,60,145" Grid.Row="1"/>
 
         <DataGrid x:Name="ProductDataGrid" Grid.Row="1" ItemsSource="{Binding Products}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Margin="23,175,179,32">
             <DataGrid.Columns>
