@@ -7,13 +7,12 @@
         mc:Ignorable="d"
         Title="ConvertVoice" Height="450" Width="800">
     <Grid Loaded="Grid_Loaded">
-        <Label Content="Voice Converter" HorizontalAlignment="Left" Margin="255,27,0,0" VerticalAlignment="Top" Width="244" FontSize="30" FontWeight="Bold" Background="#FFF77474"/>
-        <TextBox x:Name="tb_Text" HorizontalAlignment="Left" Margin="174,115,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="616" Height="102"/>
-        <Label Content="Convert Speech to Text" HorizontalAlignment="Left" Margin="8,115,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_Speech" Content="Speech" HorizontalAlignment="Left" Margin="281,250,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.042,0.471" Click="btn_Speech_Click" Width="96"/>
-        <Button x:Name="btn_Reset" Content="Reset" HorizontalAlignment="Left" Margin="504,250,0,0" VerticalAlignment="Top" Width="100" Click="btn_Reset_Click"/>
-        <Button x:Name="btn_Stop" Content="Stop" HorizontalAlignment="Left" Margin="400,250,0,0" VerticalAlignment="Top" Width="82" Click="btn_Stop_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="641,317,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Label Content="Voice Controller" HorizontalAlignment="Left" Margin="307,36,0,0" VerticalAlignment="Top" Width="244" FontSize="30" FontWeight="Bold" Background="#FFF77474"/>
+        <TextBox x:Name="tb_Text" HorizontalAlignment="Left" Margin="194,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="544" Height="102"/>
+        <Label Content="Convert Speech to Text" HorizontalAlignment="Left" Margin="10,199,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button x:Name="btn_Speech" Content="Speech" HorizontalAlignment="Left" Margin="307,304,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.042,0.471" Click="btn_Speech_Click" Width="96" FontWeight="Bold" Background="#FFE19A9A"/>
+        <Button x:Name="btn_Reset" Content="Reset" HorizontalAlignment="Left" Margin="533,304,0,0" VerticalAlignment="Top" Width="100" Click="btn_Reset_Click" FontWeight="Bold" Background="#FFE19A9A"/>
+        <Button x:Name="btn_Stop" Content="Stop" HorizontalAlignment="Left" Margin="425,304,0,0" VerticalAlignment="Top" Width="82" Click="btn_Stop_Click" FontWeight="Bold" Background="#FFE19A9A"/>
 
     </Grid>
 </Window>

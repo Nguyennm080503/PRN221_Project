@@ -14,8 +14,6 @@
 
         </Grid.RowDefinitions>
 
-        <Button Content="Export" Click="ExportButton_Click" Margin="683,217,41,145" Grid.Row="1"/>
-
         <DataGrid x:Name="ProductDataGrid" Grid.Row="1" ItemsSource="{Binding Products}" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" Margin="23,175,154,32">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ProductID" Binding="{Binding ProductId}" Width="100"/>
@@ -25,5 +23,11 @@
                 <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="100"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Button x:Name="btn_addSh" Content="Add Product" HorizontalAlignment="Left" Margin="674,265,0,0" Grid.Row="1" VerticalAlignment="Top" Click="btn_addSh_Click" Width="98" Height="37" FontWeight="Bold" Background="#FFE19A9A"/>
+        <TextBox x:Name="txt_TextAdd" HorizontalAlignment="Left" Height="49" Margin="150,46,0,0" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="387"/>
+        <Button x:Name="btn_spAdd" Content="Speech" HorizontalAlignment="Left" Margin="167,126,0,0" Grid.Row="1" VerticalAlignment="Top" Click="btn_spAdd_Click" Height="19" Width="67" FontWeight="Bold" Background="#FFE19A9A"/>
+        <Button x:Name="btn_Stop" Content="Stop" HorizontalAlignment="Left" Margin="305,126,0,0" Grid.Row="1" VerticalAlignment="Top" Height="19" Width="68" Click="btn_Stop_Click" FontWeight="Bold" Background="#FFE19A9A"/>
+        <Button x:Name="btn_Reset" Content="Reset" HorizontalAlignment="Left" Margin="437,126,0,0" Grid.Row="1" VerticalAlignment="Top" Height="19" Width="85" Click="Button_Click" FontWeight="Bold" Background="#FFE19A9A"/>
+        <Label Content="Speech to Text:" HorizontalAlignment="Left" Margin="41,58,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Window>

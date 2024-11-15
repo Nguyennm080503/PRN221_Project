@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PRN_ASS\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj": {}
+    "D:\\PRN_ASS\\PRN221_Ass\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj": {}
   },
   "projects": {
-    "D:\\PRN_ASS\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj": {
+    "D:\\PRN_ASS\\PRN221_Ass\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN_ASS\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
+        "projectUniqueName": "D:\\PRN_ASS\\PRN221_Ass\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
         "projectName": "WPF_Project",
-        "projectPath": "D:\\PRN_ASS\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
+        "projectPath": "D:\\PRN_ASS\\PRN221_Ass\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\WPF_Project.csproj",
         "packagesPath": "C:\\Users\\thaoh\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN_ASS\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\obj\\",
+        "outputPath": "D:\\PRN_ASS\\PRN221_Ass\\PRN211_ASS\\PRN221_Project\\WPF_Project\\WPF_Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,27 +39,28 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "ClosedXML": {
-              "target": "Package",
-              "version": "[0.90.0, )"
-            },
             "CsvHelper": {
               "target": "Package",
               "version": "[15.0.5, )"
             },
             "EPPlus": {
               "target": "Package",
-              "version": "[7.0.10, )"
+              "version": "[6.0.3, )"
             },
-            "NAudio": {
+            "QRCoder": {
               "target": "Package",
-              "version": "[2.2.1, )"
+              "version": "[1.4.3, )"
             },
             "System.Runtime.Extensions": {
               "target": "Package",
@@ -89,7 +90,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

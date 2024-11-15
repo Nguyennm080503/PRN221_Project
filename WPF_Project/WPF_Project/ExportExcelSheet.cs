@@ -13,7 +13,7 @@ namespace WPF_Project
             Application excel = new Application();
             excel.Visible = true;
             Workbook workbook = excel.Workbooks.Open(filePath); // Mở Workbook đã tồn tại
-            Worksheet sheet1 = workbook.Sheets[1];
+            Worksheet sheet1 = workbook.Sheets[0];
 
             sheet1.Range["A1:C1"].Merge();
             sheet1.Range["A2:C2"].Merge();

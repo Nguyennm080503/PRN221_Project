@@ -26,10 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="ClosedXML" Version="0.90.0" />
     <PackageReference Include="CsvHelper" Version="15.0.5" />
-    <PackageReference Include="EPPlus" Version="7.0.10" />
-    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="EPPlus" Version="6.0.3" />
+    <PackageReference Include="QRCoder" Version="1.4.3" />
     <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
     <PackageReference Include="System.Speech" Version="8.0.0" />
   </ItemGroup>
@@ -37,6 +36,21 @@
   <ItemGroup>
     <Resource Include="off.jpeg" />
     <Resource Include="on.jpeg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>
