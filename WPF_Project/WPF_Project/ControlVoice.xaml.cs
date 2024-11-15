@@ -59,7 +59,9 @@ namespace WPF_Project
 
         public class Product
         {
-            public int ProductId { get; set; }
+            private static int nextProductId = 1; // biến static để theo dõi ProductId kế tiếp
+
+            public int ProductId { get; private set; }
             public string ProductName { get; set; }
             public decimal Price { get; set; }
             public int Quantity { get; set; }
